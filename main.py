@@ -11,7 +11,10 @@ class params(BaseModel):
     rotate:int = None
     page:int = None
 
-
+@app.get("/")
+def hello():
+    return {"text":"Rotate pdf "}
+        
 @app.post("/")
 def read_user(body: params):
     body=body.dict()
@@ -41,3 +44,4 @@ def rotatepdf(file_path:str,angle_of_rotation:int,page_number:int) :
     return {"file_path" :"/tmp/result.pdf","angle_of_rotation":angle,"page_number":page_number}
     
 
+    
