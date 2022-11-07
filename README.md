@@ -1,6 +1,6 @@
 # REST_API_PDF_ROTATE
 
-##How to run
+## How to run
 1. git clone 
 ...bash
     git clone https://github.com/hemantp88/Rest_pdf_rotate.git
