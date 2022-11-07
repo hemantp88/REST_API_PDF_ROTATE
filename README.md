@@ -2,9 +2,9 @@
 
 ## How to run
 1. git clone 
-...bash
+```bash
     git clone https://github.com/hemantp88/Rest_pdf_rotate.git
-...
+```
 
 2. Have dependencies in requirements.txt (`pip install -r requirments.txt`)
 3. run uvicorn using command uvicorn main:app 
