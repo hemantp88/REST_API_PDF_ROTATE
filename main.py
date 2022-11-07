@@ -12,7 +12,7 @@ class params(BaseModel):
     page:int = None
 
 
-@app.post("/rotate")
+@app.post("/")
 def read_user(body: params):
     body=body.dict()
     return  rotatepdf(body["pdf"],body["rotate"],body["page"])
